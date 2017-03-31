@@ -19,6 +19,19 @@ public class Draw
 	
 	public static void main(String[] args)
 	{
+		Container outer = new Container(4, 4);
+		Container middle = new Container(5, 5);
+		Container inner = new Container(6, 6);
+		
+		outer.add(middle);
+		middle.add(inner);
+		
+		outer.add(new Component(1,1));
+		middle.add(new Component(2,2));
+		inner.add(new Component(3,3));
+		
+		outer.draw(screen.content);
+		
 		Draw screen = new Draw(25, 80);
 		new Component(3,7).draw(screen.getContent());
 		new Component(5,71).draw(screen.getContent());
