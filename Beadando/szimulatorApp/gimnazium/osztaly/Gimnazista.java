@@ -1,4 +1,4 @@
-package gimnazium.osztaly;
+package szimulatorApp.gimnazium.osztaly;
 
 import java.util.Random;
 
